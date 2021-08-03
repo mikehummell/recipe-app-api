@@ -18,4 +18,4 @@ Take the last version from the major verison
 ## Create the app folder
 
 # Run it:
-docker build
+docker build .

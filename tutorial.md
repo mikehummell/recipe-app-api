@@ -33,4 +33,4 @@ docker-compose run app sh -c "django-admin.py startproject app ."
 ## Travis
 Github and travis.com must be link
 create a .travis.yml file
-Link with flake8 (Nice cood)
+Link with flake8 (Nice cood) 

@@ -19,3 +19,18 @@ Take the last version from the major verison
 
 # Run it:
 docker build .
+
+
+# Docker Compose
+create a docker compose file for orchister all the services (eg Backend, DB)
+
+docker-compose build
+docker-compose run app
+
+## Install Django
+docker-compose run app sh -c "django-admin.py startproject app ." 
+
+## Travis
+Github and travis.com must be link
+create a .travis.yml file
+Link with flake8 (Nice cood)

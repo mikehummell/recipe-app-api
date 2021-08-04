@@ -34,3 +34,12 @@ docker-compose run app sh -c "django-admin.py startproject app ."
 Github and travis.com must be link
 create a .travis.yml file
 Link with flake8 (Nice cood) 
+
+# Unittest
+Django looks for a tests.py file an run it. Or folder
+
+docker-compose run app sh -c "python manage.py test"
+
+#Flake8
+First install it on the docker: docker-compose build
+run it: docker-compose run app sh -c "python manage.py test && flake8" 

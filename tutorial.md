@@ -56,3 +56,7 @@ Link it also in the settings.py: AUTH_USER_MODEL = 'core.User'
 
 Make migration
 docker-compose run app sh -c "python manage.py makemigrations core"
+
+# Start Server
+docker-compose up
+

@@ -57,6 +57,35 @@ Link it also in the settings.py: AUTH_USER_MODEL = 'core.User'
 Make migration
 docker-compose run app sh -c "python manage.py makemigrations core"
 
+# wait_for_db
+Add some wait for db because Docker does not always start the db imediatly
+Also created some moked test not for wait for the db (overwrite time)
+everythin is added to management/commands (Django default)
+
 # Start Server
 docker-compose up
+
+Create a super user:
+docker-compose run app sh -c "python manage.py createsuperuser"
+
+# Create a User App (Endpoint)
+--rm remove the conntainer afterwared
+docker-compose run --rm app sh -c "python manage.py startapp user"
+Remove migration, admin, module,  (becuase everything is in the coreapp)
+remote test and create a tests-folder with __init__.py
+
+Install app (settings.py)
+    'rest_framework',
+    'rest_framework.authtoken',
+
+    'users'
+
+## create User
+create a sizializer for the json
+create a view for the return
+connect both in urls.py
+also link in the core/urls.py
+
+
+
 

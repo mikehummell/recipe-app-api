@@ -21,11 +21,14 @@ Take the last version from the major verison
 docker build .
 
 
+
 # Docker Compose
 create a docker compose file for orchister all the services (eg Backend, DB)
 
 docker-compose build
 docker-compose run app
+
+docker-compose up //to run
 
 ## Install Django
 docker-compose run app sh -c "django-admin.py startproject app ." 
